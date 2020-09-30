@@ -1,0 +1,12 @@
+.hello {
+	text-align: center;
+
+	&__heading{
+		color: #10CAB7;
+		font-size: 55px;
+		margin-bottom: 62px;
+	}
+	&__sub-heading {
+		padding-bottom: 100px;
+	}
+}

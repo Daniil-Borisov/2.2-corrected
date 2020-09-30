@@ -1,0 +1,30 @@
+.services{
+  display: flex;
+  flex-wrap: wrap;
+
+  &__col {
+    display: flex;
+    flex-wrap: wrap;
+
+    &_wrapper{
+      display: flex;
+    }
+    &_thumb {
+      margin-right: 50px;
+
+    }
+    &_text_description {
+      padding-bottom: 40px;
+      line-height: 30px;
+    }
+    &-thumb {
+      position: relative;
+    }
+    &_square-grey {
+      position: absolute;
+      z-index: -1;
+      top: -10%;
+      left: 230px;
+    }
+  }
+}

@@ -1,0 +1,14 @@
+.main-menu
+    input(type="checkbox" id="menu")
+    .main-menu__menu
+        label(for="menu")
+            i.fas.fa-times.menu__icon
+        nav.menu__menu_list
+            .menu__list_heading Menu
+            each item in ['Home', 'Services', 'Portfolio', 'About']
+                a.menu__list_item(href='#')=item
+            .menu__list_heading Get in Touch
+            a(href="#" class="menu__list_item") Contact Me
+            .menu__list_heading Get Social
+            each item in ['Behance', 'Dribble', 'Twitter']
+                a.menu__list_item(href='#')=item

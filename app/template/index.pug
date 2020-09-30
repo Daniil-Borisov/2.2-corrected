@@ -1,0 +1,28 @@
+extends layout
+include heading
+block variables
+    -var title="2.2"
+block append css
+    link(rel="stylesheet" type="text/css" href="./css/hello.css")
+    link(rel="stylesheet" type="text/css" href="./css/task.css")
+    link(rel="stylesheet" type="text/css" href="./css/heading.css")
+    link(rel="stylesheet" type="text/css" href="./css/service.css")
+    link(rel="stylesheet" type="text/css" href="./css/portfolio.css")
+    link(rel="stylesheet" type="text/css" href="./css/about.css")
+    link(rel="stylesheet" type="text/css" href="./css/contact.css")
+block content
+    section.bg-grey
+        include hello
+    section
+        include task
+        +heading('services', "Don't be busy, be productive")
+        include service
+    section.bg-grey
+        +heading('portfolio', 'If you do it right, it will last forever.')
+        include portfolio
+    section
+        +heading('about','Less is more work')
+        include about
+    section.bg-grey
+        +heading('contact', 'We are born to create')
+        include contact

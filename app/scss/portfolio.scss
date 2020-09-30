@@ -1,0 +1,12 @@
+.portfolio{
+	display: flex;
+	flex-wrap: wrap;
+
+	&__col{
+		padding: 15px;
+
+		&_thumb {
+			width: 100%;
+		}
+	}
+}

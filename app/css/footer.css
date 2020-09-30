@@ -1,0 +1,13 @@
+.footer {
+  background-color: #2C4755;
+}
+
+.footer__text {
+  color: #fff;
+  padding: 15px;
+  text-align: center;
+}
+
+.footer__text_word {
+  color: #10CAB7;
+}

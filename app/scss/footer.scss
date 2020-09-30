@@ -1,0 +1,13 @@
+.footer {
+	background-color:#2C4755;
+
+	&__text{
+		color:#fff;
+		padding: 15px;
+		text-align: center;
+
+		&_word{
+			color:#10CAB7;
+		}
+	}
+}
