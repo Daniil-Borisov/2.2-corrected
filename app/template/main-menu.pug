@@ -3,12 +3,12 @@
     .main-menu__menu
         label(for="menu")
             i.fas.fa-times.menu__icon
-        nav.menu__menu_list
+        nav.menu__menu__list
             .menu__list_heading Menu
             each item in ['Home', 'Services', 'Portfolio', 'About']
-                a.menu__list_item(href='#')=item
-            .menu__list_heading Get in Touch
+                a.menu__list__item(href='#')=item
+            .menu__list__heading Get in Touch
             a(href="#" class="menu__list_item") Contact Me
-            .menu__list_heading Get Social
+            .menu__list__heading Get Social
             each item in ['Behance', 'Dribble', 'Twitter']
-                a.menu__list_item(href='#')=item
+                a.menu__list__item(href='#')=item

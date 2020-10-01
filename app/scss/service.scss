@@ -6,21 +6,21 @@
     display: flex;
     flex-wrap: wrap;
 
-    &_wrapper{
+    &__wrapper{
       display: flex;
     }
-    &_thumb {
+    &__thumb {
       margin-right: 50px;
 
     }
-    &_text_description {
+    &__text__description {
       padding-bottom: 40px;
       line-height: 30px;
     }
-    &-thumb {
+    &__thumb--relative {
       position: relative;
     }
-    &_square-grey {
+    &__square-grey {
       position: absolute;
       z-index: -1;
       top: -10%;
