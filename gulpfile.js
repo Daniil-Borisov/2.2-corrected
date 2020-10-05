@@ -9,7 +9,9 @@ var pug = require('gulp-pug');
 
 gulp.task('clean', async function(){
   del.sync('dist')
-})
+});
+
+
 
 gulp.task('scss', function(){
 	return gulp.src('app/scss/**/*.scss')
@@ -18,20 +20,20 @@ gulp.task('scss', function(){
       browsers: ['last 8 versions']
     }))
     // .pipe(rename({suffix: '.min'}))
-	.pipe(gulp.dest('app/css'))
+	.pipe(gulp.dest('dist/css'))
 	.pipe(browserSync.reload({stream:true}))
 
 });
 
 gulp.task('html', function(){
-	return gulp.src('app/*.html')
+	return gulp.src('dist/*.html')
 	.pipe(browserSync.reload({stream:true}))
 })
 
 gulp.task('browser-sync', function(){
 	browserSync.init({
 		server:{
-			baseDir:"app/"
+			baseDir:"dist/"
 		}
 	})
 });
@@ -42,15 +44,12 @@ gulp.task('pug',function() {
 	    doctype: 'html',
 	    pretty: true
  	}))
- 	.pipe(gulp.dest('app/'));
+ 	.pipe(gulp.dest('dist/'));
 });
 
 gulp.task('export', async function(){
   let buildHtml = gulp.src('app/**/*.html')
     .pipe(gulp.dest('dist'));
-
-  let BuildCss = gulp.src('app/css/**/*.css')
-    .pipe(gulp.dest('dist/css'));
 
   let BuildJs = gulp.src('app/js/**/*.js')
     .pipe(gulp.dest('dist/js'));
